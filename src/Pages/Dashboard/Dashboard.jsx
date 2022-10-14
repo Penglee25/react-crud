@@ -4,44 +4,30 @@ import "./Dashboard.scss";
 
 export default function Dashboard() {
 	const initRow = {
-		username: "sample1",
-		email: "sample1",
-		gender: "sample1",
-		phone: "sample1",
+		product: "asd",
+		price: "asd",
+		qty: "asd",
 	};
 	const [rowdata, setRowData] = useState([initRow]);
-	const onAddRowClick = () => {
-		setRowData(
-			rowdata.concat({
-				username: "asd",
-				email: "asd",
-				gender: "asd",
-				phone: "asd",
-			})
-		);
-	};
+	
 	const columns = [
 		{
-			Header: "Name",
-			accessor: "username",
+			Header: "Product",
+			accessor: "product_name",
 		},
 		{
-			Header: "Email",
-			accessor: "email",
+			Header: "Price",
+			accessor: "price",
 		},
 		{
-			Header: "Gender",
-			accessor: "gender",
-		},
-		{
-			Header: "Phone",
-			accessor: "phone",
+			Header: "Quantity",
+			accessor: "qty",
 		},
 	];
 
 	return (
 		<div>
-			<Table columns={columns} data={rowdata} />
+			<Table columns={columns}/>
 		</div>
 	);
 }
