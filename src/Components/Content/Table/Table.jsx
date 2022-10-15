@@ -194,6 +194,7 @@ export default function Table({ columns }) {
 						<div className="flex justify-between">
 							<div>Item</div>
 							<div>
+								<button class="secondary-button" onClick={() => window.location.reload(true)}>Refresh</button>
 								<button class="primary-button" onClick={() => setToggleModal(true)}>Add</button>
 							</div>
 						</div>
@@ -217,7 +218,7 @@ export default function Table({ columns }) {
 											<>
 											<tr className="bg-white border-b">
 												<td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">{res.product_name}</td>
-												<td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">{res.price}</td>
+												<td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">${res.price}</td>
 												<td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">{res.qty}</td>
 												<td className="text-sm text-right text-gray-900 font-light px-6 py-4 whitespace-nowrap">
 												<button onClick={handleClickUpdate} 

@@ -16,6 +16,17 @@
     background-color: var(--light-purple-color);
   }
 }
+.secondary-button{
+  background-color: var(--light-yellow-color);
+  color: white;
+  padding: .4rem 2rem;
+  border-radius: 40px;
+  transition: .4s;
+  font-size: 18px;
+  &:hover{
+    background-color: var(--secondary-color);
+  }
+}
 
 .login{
   width: 50%;
