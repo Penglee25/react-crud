@@ -16,6 +16,17 @@
     background-color: var(--light-purple-color);
   }
 }
+.secondary-button{
+  background-color: var(--light-yellow-color);
+  color: white;
+  padding: .4rem 2rem;
+  border-radius: 40px;
+  transition: .4s;
+  font-size: 18px;
+  &:hover{
+    background-color: var(--secondary-color);
+  }
+}
 
 .login{
   width: 50%;
@@ -34,4 +45,19 @@
   input:focus{
     border: 1px solid var(--light-purple-color);
   }
+}
+.loading{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  z-index: 9;
+  color: #000000;
+  font-size: 80px;
 }
