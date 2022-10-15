@@ -34,7 +34,7 @@ export default function Table({ columns }) {
 	}
 
 	const getAllProduct = async () => {
-		const API = axios.create({ baseURL: "http://localhost:5000" });
+		const API = axios.create({ baseURL: "https://mern-simple-crud1.herokuapp.com" });
 		try {
 			const {data: response} = await API.get("/product/list");
 			setData(response)
